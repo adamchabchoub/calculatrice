@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/resultat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:background="@android:color/white"
+        android:textSize="24sp"
+        android:padding="16dp"
+        android:gravity="end"
+        android:focusable="false"
+
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="6"
+        android:layout_gravity="center">
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero7"
+            android:text="7"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero8"
+            android:text="8"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero9"
+            android:text="9"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/division"
+            android:text="/"
+            android:onClick="onOperateur"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero4"
+            android:text="4"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero5"
+            android:text="5"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero6"
+            android:text="6"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/fois"
+            android:text="*"
+            android:onClick="onOperateur"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero1"
+            android:text="1"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero2"
+            android:text="2"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero3"
+            android:text="3"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/moins"
+            android:text="-"
+            android:onClick="onOperateur"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/virgule"
+            android:text="."
+            android:onClick="onVirgule"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/numero0"
+            android:text="0"
+            android:onClick="onNumero"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/plus"
+            android:text="+"
+            android:onClick="onOperateur"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/reinitialiser"
+            android:text="C"
+            android:onClick="onReinitialiser"
+            />
+
+        <Button
+            style="@style/CalculatorButton"
+            android:id="@+id/egal"
+            android:text="="
+            android:onClick="onResultat"
+            />
+
+    </GridLayout>
+
+
+
+</LinearLayout>
